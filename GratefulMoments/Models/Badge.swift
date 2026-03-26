@@ -29,4 +29,10 @@ extension Badge {
         badge.timestamp = .now
         return badge
     }
+    
+    static var newBadgeSample: Badge {
+        let badge = Badge(details: .cleverFourty)
+        badge.timestamp = .now
+        return badge
+    }
 }

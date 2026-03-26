@@ -53,3 +53,7 @@ struct BadgeDetailView: View {
     BadgeDetailView(badge: .sample)
         .environment(\.locale, Locale(identifier: "ru"))
 }
+
+#Preview("New badge") {
+    BadgeDetailView(badge: .newBadgeSample)
+}

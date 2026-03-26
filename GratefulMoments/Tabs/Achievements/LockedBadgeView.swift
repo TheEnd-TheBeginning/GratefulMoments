@@ -35,3 +35,7 @@ struct LockedBadgeView: View {
 #Preview {
     LockedBadgeView(badge: .sample)
 }
+
+#Preview("New badge") {
+    LockedBadgeView(badge: .newBadgeSample)
+}

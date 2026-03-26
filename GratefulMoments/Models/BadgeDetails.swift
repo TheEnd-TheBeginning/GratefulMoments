@@ -12,6 +12,7 @@ enum BadgeDetails: Int, Codable, CaseIterable {
     case shutterbug
     case expressive
     case perfectTen
+    case cleverFourty
     
     var requirements: String {
         switch self {
@@ -25,6 +26,8 @@ enum BadgeDetails: Int, Codable, CaseIterable {
             return "Add five moments with a photo and text."
         case .perfectTen:
             return "Collecting at least 10 moments, collecting all the other badges along the way."
+        case .cleverFourty:
+            return "Add 40 clever moments!"
         }
     }
     
@@ -40,6 +43,8 @@ enum BadgeDetails: Int, Codable, CaseIterable {
             return "Look at you, giving yourself all the ways to savor your happy memories!"
         case .perfectTen:
             return "You're getting the hang of your new habit! Keep it up and see how far it can take you."
+        case .cleverFourty:
+            return "You added so many memories. It's amazing how much you've grown and how much you've learned! You deserve this four-leaf clover!"
         }
     }
     
@@ -55,6 +60,8 @@ enum BadgeDetails: Int, Codable, CaseIterable {
             return .ocean
         case .perfectTen:
             return .ember
+        case .cleverFourty:
+            return .emerald
         }
     }
     
@@ -70,6 +77,8 @@ enum BadgeDetails: Int, Codable, CaseIterable {
             return "Expressive"
         case .perfectTen:
             return "Perfect 10"
+        case .cleverFourty:
+            return "Clever 40"
         }
     }
     
@@ -85,6 +94,8 @@ enum BadgeDetails: Int, Codable, CaseIterable {
             return .expressiveUnlocked
         case .perfectTen:
             return .perfectTenUnlocked
+        case .cleverFourty:
+            return .cleverFourtyUnlocked
         }
     }
     
@@ -100,6 +111,8 @@ enum BadgeDetails: Int, Codable, CaseIterable {
             return .expressiveLocked
         case .perfectTen:
             return .perfectTenLocked
+        case .cleverFourty:
+            return .cleverFourtyLocked
         }
     }
 }

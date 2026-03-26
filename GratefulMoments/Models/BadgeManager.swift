@@ -29,7 +29,8 @@ class BadgeManager {
                     .fiveStars where models.count >= 5,
                     .shutterbug where models.count(where: { $0.image != nil }) >= 3,
                     .expressive where models.count(where: { $0.image != nil && !$0.note.isEmpty }) >= 5,
-                    .perfectTen where models.count >= 10 && lockedBadges.count == 1:
+                    .perfectTen where models.count >= 10 && lockedBadges.count == 1,
+                    .cleverFourty where models.count >= 40:
                 newlyUnlocked.append(badge)
             default:
                 continue
