@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		612B13BA2F6D8E8800FF3AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612B13662F6AAEBD00FF3AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612B136D2F6AAEBD00FF3AA9;
+			remoteInfo = GratefulMoments;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		612B136E2F6AAEBD00FF3AA9 /* GratefulMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GratefulMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		612B13B62F6D8E8700FF3AA9 /* GratefulMomentsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GratefulMomentsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = GratefulMoments;
 			sourceTree = "<group>";
 		};
+		612B13B72F6D8E8800FF3AA9 /* GratefulMomentsTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GratefulMomentsTest;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		612B136B2F6AAEBD00FF3AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612B13B32F6D8E8700FF3AA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				612B13702F6AAEBD00FF3AA9 /* GratefulMoments */,
+				612B13B72F6D8E8800FF3AA9 /* GratefulMomentsTest */,
 				612B136F2F6AAEBD00FF3AA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				612B136E2F6AAEBD00FF3AA9 /* GratefulMoments.app */,
+				612B13B62F6D8E8700FF3AA9 /* GratefulMomentsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 612B136E2F6AAEBD00FF3AA9 /* GratefulMoments.app */;
 			productType = "com.apple.product-type.application";
 		};
+		612B13B52F6D8E8700FF3AA9 /* GratefulMomentsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612B13BC2F6D8E8800FF3AA9 /* Build configuration list for PBXNativeTarget "GratefulMomentsTest" */;
+			buildPhases = (
+				612B13B22F6D8E8700FF3AA9 /* Sources */,
+				612B13B32F6D8E8700FF3AA9 /* Frameworks */,
+				612B13B42F6D8E8700FF3AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612B13BB2F6D8E8800FF3AA9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				612B13B72F6D8E8800FF3AA9 /* GratefulMomentsTest */,
+			);
+			name = GratefulMomentsTest;
+			packageProductDependencies = (
+			);
+			productName = GratefulMomentsTest;
+			productReference = 612B13B62F6D8E8700FF3AA9 /* GratefulMomentsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					612B136D2F6AAEBD00FF3AA9 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					612B13B52F6D8E8700FF3AA9 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 612B136D2F6AAEBD00FF3AA9;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				612B136D2F6AAEBD00FF3AA9 /* GratefulMoments */,
+				612B13B52F6D8E8700FF3AA9 /* GratefulMomentsTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		612B136C2F6AAEBD00FF3AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612B13B42F6D8E8700FF3AA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		612B13B22F6D8E8700FF3AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		612B13BB2F6D8E8800FF3AA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612B136D2F6AAEBD00FF3AA9 /* GratefulMoments */;
+			targetProxy = 612B13BA2F6D8E8800FF3AA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		612B137A2F6AAEBF00FF3AA9 /* Debug */ = {
@@ -260,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +376,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		612B13BD2F6D8E8800FF3AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR7DRD793D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetb.GratefulMomentsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GratefulMoments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GratefulMoments";
+			};
+			name = Debug;
+		};
+		612B13BE2F6D8E8800FF3AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR7DRD793D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetb.GratefulMomentsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GratefulMoments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GratefulMoments";
 			};
 			name = Release;
 		};
@@ -319,6 +434,15 @@
 			buildConfigurations = (
 				612B137D2F6AAEBF00FF3AA9 /* Debug */,
 				612B137E2F6AAEBF00FF3AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612B13BC2F6D8E8800FF3AA9 /* Build configuration list for PBXNativeTarget "GratefulMomentsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612B13BD2F6D8E8800FF3AA9 /* Debug */,
+				612B13BE2F6D8E8800FF3AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
