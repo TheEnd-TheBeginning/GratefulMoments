@@ -1,1 +1,1 @@
-This is the app for remember interesting and meaningful moments of your life which was made with Develop in Swift Tutorials.
+This app helps you remember the meaningful and interesting moments of your life. It was created using the Develop in Swift tutorials.
